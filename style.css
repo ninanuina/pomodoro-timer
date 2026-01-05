@@ -1,0 +1,173 @@
+body, input, button, select, textarea {
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+}
+
+body {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.app {
+  background: #f0ebe5;  /* Transparent background */
+  border-radius: 1.2em;
+  padding: 1em;
+  width: 90%; /* responsive width for embeds */
+  max-width: 360px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-size: 0.9em; /* slightly smaller font */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.6em;
+}
+.header img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+/* Timer */
+.timer {
+  text-align: center;
+  font-size: 2.5em; /* smaller timer */
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+.controls,
+.modes {
+  display: flex;
+  justify-content: center;
+  gap: 0.4em;
+  margin-bottom: 0.6em;
+}
+
+button {
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 0.6em;
+  cursor: pointer;
+  background: #e8e1d6;
+  font-family: inherit;
+  font-size: 0.85em;
+}
+
+button.active {
+  background: #e76f51;
+  color: white;
+}
+
+.controls button {
+  background: #e76f51;
+  color: white;
+}
+
+/* Settings */
+.settings {
+  display: flex;
+  justify-content: center;
+  gap: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.settings label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.settings input[type="number"] {
+  width: 3em;
+  text-align: center;
+  border-radius: 0.4em;
+  border: 1px solid #ccc;
+  padding: 0.1em;
+}
+
+/* Tasks */
+.section h3 {
+  text-align: center;
+  margin: 0 0 0.3em;
+  font-size: 0.85em;
+}
+
+.task-input {
+  display: flex;
+  gap: 0.4em;
+  margin-bottom: 0.3em;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 0.3em;
+  border-radius: 0.4em;
+  border: 1px solid #ccc;
+  font-size: 0.85em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  background: rgba(255,255,255,0.8);
+  padding: 0.3em 0.5em;
+  border-radius: 0.6em;
+  margin-bottom: 0.3em;
+  font-size: 0.85em;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li input[type="checkbox"], li input[type="radio"] {
+  cursor: pointer;
+}
+
+li button.delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #b00;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+/* Collapse done list */
+.collapse {
+  cursor: pointer;
+  font-size: 0.75em;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 0.3em;
+}
+
+/* Time tracked */
+.time-tracked {
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.time-tracked button {
+  margin-left: 0.3em;
+  background: #e76f51;
+  color: white;
+  padding: 0.15em 0.3em;
+  border-radius: 0.4em;
+  font-size: 0.7em;
+}

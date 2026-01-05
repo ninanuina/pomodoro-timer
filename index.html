@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>pomodoro + task</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+
+<div class="app">
+  <!-- Header with Tomato Icon -->
+  <div class="header">
+    <img src="https://media.istockphoto.com/id/2195223217/vector/playful-tomato-character.jpg?s=612x612&w=0&k=20&c=xaAk5gRCxThWUhIY0cK0CYLuyHxcxDUUyKk3xCnvvYI=" alt="Tomato Icon">
+  </div>
+
+  <!-- Timer Display -->
+  <div class="timer" id="time">40:00</div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="start">Start</button>
+    <button id="reset">Reset</button>
+  </div>
+
+  <!-- Mode Selection -->
+  <div class="modes">
+    <button data-mode="pomodoro" class="active">Pomodoro</button>
+    <button data-mode="short">Short Break</button>
+    <button data-mode="long">Long Break</button>
+  </div>
+
+  <!-- Settings -->
+  <div class="settings">
+    <label>Work <input type="number" id="setPomodoro" value="40"></label>
+    <label>Short <input type="number" id="setShort" value="10"></label>
+    <label>Long <input type="number" id="setLong" value="20"></label>
+  </div>
+
+  <!-- Tasks -->
+  <div class="section">
+    <h3>Tasks</h3>
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Add a task">
+      <button id="addTask">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div class="collapse" id="toggleDone">Show Completed Tasks</div>
+    <ul id="doneList" style="display:none;"></ul>
+  </div>
+
+  <!-- Time Tracked -->
+  <div class="time-tracked">
+    Total Time Tracked: <span id="tracked">0</span> min
+    <button id="resetTracked">Reset</button>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
